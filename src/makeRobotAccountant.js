@@ -8,7 +8,7 @@
 function makeRobotAccountant() {
   let callCounter = 0;
 
-  const getSum = (num) => {
+  return (num) => {
     callCounter++;
 
     return (operatar) => {
@@ -19,8 +19,6 @@ function makeRobotAccountant() {
       return num + operatar;
     };
   };
-
-  return getSum;
 }
 
 module.exports = makeRobotAccountant;
